@@ -1,4 +1,4 @@
-body {
+  body {
     margin: 0;
   }
   
@@ -63,7 +63,7 @@ body {
 
   .location-button{
       position: absolute;
-
+      background-image: url("C:\Users\fprad\OneDrive - Full Sail University\WCO\Codive\location-symbol.jpg");
       width:16px;
       height:16px;
       left:6px;
@@ -75,4 +75,16 @@ body {
     width: 50%;
   }
 
+  #u-full-width{
+    position: relative; 
+    height: 200 px; 
+    width:  400 px;
+  }
   
+  /* .location{
+    background-image: url("location-symbol.jpg");
+    width: 16px;
+    height: 16px; 
+    left: 6px;
+    bottom: 0px;
+  } */
