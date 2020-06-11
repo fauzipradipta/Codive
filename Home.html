@@ -8,60 +8,26 @@
     <title>Codive</title>
   </head>
   <body>    
-    <h2>Codive</h2>
-    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-    
-    <div id="id01" class="modal">
-      
-      <form class="modal-content animate" action="index.html" method="post">
-        
-        <div class="container">
-          <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="uname" required>
-          
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-          
-          <button type="submit" onclick="index.html" id="SignIn"> <a href=#index.html></a>SignIn</button>
-          <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-          </label>
+    <div class="SignInPage">
+      <!-- <h2>Codive</h2> -->      
+      <div class ="form-box">
+        <div class ="button-box">
+          <div id="btn">            
+          </div>
+          <button type="button" class="toggle-btn"> Log In</button>
+          <button type="button" class="toggle-btn"> Sign Up</button>
         </div>
-        
-        <div class="container" style="background-color:#f1f1f1">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-          <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-      </form>
+        <!-- <div class="social-icons"> 
+          <img src="fb.jpg">
+          <img src= "twitter.png">
+        </div> -->
+        <form class="input-group">
+          <input type="text" class="input-field" placeholder="User Id" required>
+          <input type="text" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="check-box"><span> Remember Password</span>
+          <button type="submit" class="submit-btn">Log In</button>
+        </form>
+      </div>
     </div>
-    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SignUp</button>
-    
-    <div id="id01" class="modal">
-      
-      <form class="modal-content animate" action="index.html" method="post">
-        
-        <div class="container">
-          <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="uname" required>
-          
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-
-          <label for="rpsw"><b>Retype Password</b></label>
-          <input type="password" placeholder="Re-TypePassword" name="rpsw"required>
-          
-          <button type="submit" onclick="index.html" id="SignUp"> <a href=#index.html></a>SignUp</button>
-          <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-          </label>
-        </div>
-        
-        <div class="container" style="background-color:#f1f1f1">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-          <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-      </form>
-    </div>
-    <script src="home.js"></script>
   </body>
   </html>
