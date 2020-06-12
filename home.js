@@ -1,10 +1,15 @@
-var modal = document.getElementById('id01');
-var SignInButton = document.getElementById('SignIn');
+var SignInButton = document.getElementById("login");
+var SignUpButton = document.getElementById("signup");
+var Button       = document.getElementById("btn");
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+function Signup(){
+    SignInButton.style.left ="-400px";
+    SignUpButton.style.left="50px"; 
+    Button.style.left="110px";
 }
 
+function Login(){
+    SignInButton.style.left ="500px";
+    SignUpButton.style.left="450px"; 
+    Button.style.left="0";
+}
