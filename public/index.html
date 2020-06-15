@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Codive</title>
+  <link rel="stylesheet" href="skeleton.css"> 
+  <link rel="stylesheet" href="index.css">
+</head>
+<!-- Google Maps API KEY: AIzaSyCW_AunXCDbDng0WpGoZH0AEMeypJoYh-Y -->
+<body>
+    <div class="navbar">
+        <div class="container">
+         <p>Codive</p>
+        </div>
+    </div>
+     
+    <div class="container">
+        <div class="row">
+          <div class="columns eight offset-by-two">
+
+           <textarea id="yakker-input" class="u-full-width" placeholder="What do you want to share?">  
+           </textarea>
+        </div>              
+      </div>   
+      <!-- <a href= "">
+        <img src='location.jpg' class="flt_rght" />
+      </a>   -->
+      <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+      <!-- <div id="map"></div>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCW_AunXCDbDng0WpGoZH0AEMeypJoYh-Y&libraries=places&callback=initMap">
+            </script> -->
+                   
+        <div class="row yakker-message-info">
+          <div class="columns eight offset-by-two">
+            <span id="yakker-message-count">140</span>
+            <button id="yakker-submit" class="button-primary" >Send</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="columns eight offset-by-two">
+            <ul id="yakker-list-container"></ul>
+          </div>
+        </div>
+    </div>
+  <script src="index.js"></script>
+</body>
+</html>
