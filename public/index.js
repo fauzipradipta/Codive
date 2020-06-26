@@ -116,6 +116,8 @@ function activatePlacesSearch(){
   var AutoComplete = new google.maps.places.Autocomplete(input);
 }
 
+//Make the Submit Button in google maps works
+
 
 var map, places, infoWindow;
 var markers = [];
@@ -383,3 +385,5 @@ function buildIWContent(place) {
     document.getElementById('iw-website-row').style.display = 'none';
   }
 }
+
+//Make the Submit Button in google maps works
