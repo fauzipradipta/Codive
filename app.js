@@ -1,52 +1,12 @@
-var express = require("express"); 
-var bodyParser = require("body-parser"); 
-
-const mongoose = require('mongoose'); 
-mongoose.connect('https://localhost:3000');
-
-var db = mongoose.connection; 
-
-db.on('error', console.log.bind(console,"Connection error")); 
-db.once('open', function(callback){
-    console.log("connection succeeded");
-})
-
+var express = require('express');       //shows that we use the express
 var app = express();
 
-app.use(bodyParser.json()); 
-app.use(express.static('public'));
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
+var server = app.listen(5000, listening);
 
-app.post('signup', function(req,res){ 
-    var name = req.body.name; 
-    var email =req.body.email; 
-    var pass = req.body.password; 
-    var phone =req.body.phone; 
-  
-    var data = { 
-        "name": name, 
-        "email":email, 
-        "password":pass, 
-        "phone":phone 
-    } 
-db.collection('details').insertOne(data,function(err, collection){ 
-        if (err) throw err; 
-        console.log("Record inserted Successfully"); 
-              
-    }); 
-          
-    return res.redirect('index.html'); 
-}) 
-  
-  
-app.get('/',function(req,res){ 
-res.set({ 
-    'Access-control-Allow-Origin': '*'
-    }); 
-return res.redirect('index.html'); 
-}).listen(3000) 
-  
-  
-console.log("server listening at port 3000"); 
+function listening(){
+    console.log("listening...");
+}
+
+app.use(express.static('public'));
+
+console.log('server is Starting');

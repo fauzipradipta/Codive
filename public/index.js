@@ -4,6 +4,7 @@ var yakkerButtonEl = document.getElementById("yakker-submit") // get post button
 var listContainerEl = document.getElementById("yakker-list-container") // get the yakker: ul container
 var maxMessageLength = 140;
 var SubmitButtonEl = document.getElementById("map-submit")
+
 function cb(data){
   for (var i = 0; i < data.length; i++){
     console.log(data[i]);
@@ -117,7 +118,9 @@ function activatePlacesSearch(){
 }
 
 //Make the Submit Button in google maps works
-
+document.getElementById('map-submit').onclick() = function(){
+   
+}
 
 var map, places, infoWindow;
 var markers = [];
