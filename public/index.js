@@ -117,11 +117,6 @@ function activatePlacesSearch(){
   var AutoComplete = new google.maps.places.Autocomplete(input);
 }
 
-//Make the Submit Button in google maps works
-document.getElementById('map-submit').onclick() = function(){
-   
-}
-
 var map, places, infoWindow;
 var markers = [];
 var autocomplete;

@@ -1,6 +1,6 @@
   body {
     margin: 0;
-
+    background-image: url('Main_Page.png');
   }
   
   .navbar {
@@ -50,6 +50,10 @@
     opacity: 0.25;
   }
   
+  /* #yakker-submit{
+    background-image: url(Send_Button.png);
+   
+  } */
   #yakker-list-container .yak-message {
     white-space: pre-wrap;
     overflow-wrap: break-word;

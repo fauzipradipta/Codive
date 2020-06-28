@@ -1,3 +1,4 @@
+
 var SignInButton = document.getElementById("login");
 var SignUpButton = document.getElementById("signup");
 var Button       = document.getElementById("btn");
@@ -16,3 +17,4 @@ function Login(){
     // var url = "index.html";
     // window.location(url);
 }
+
