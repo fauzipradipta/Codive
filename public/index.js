@@ -73,6 +73,7 @@ function sendMessage() {
     timeEl.innerText = timeText;
     var listItem = document.createElement("li");
 
+     
     var data = {
       "message": yakkerText,
       "time": timeText
@@ -89,12 +90,14 @@ function sendMessage() {
     // append el to the container
     listContainerEl.appendChild(listItem);
 
-    // clear out the textare and reset the button and counter
+    // clear out the text are and reset the button and counter
     yakkerInputEl.innerText = "";
     updateButton(0);
     updateCharacterCount(0);
   }
 }
+
+
 
 yakkerInputEl.addEventListener('input', function(event) {
   var messageLength = event.target.value.length;
@@ -112,10 +115,10 @@ yakkerInputEl.addEventListener('keydown', function(event) {
 
 yakkerButtonEl.addEventListener('click', sendMessage, false);
 
-function activatePlacesSearch(){
-  var input = documet.getElementById('autocomplete'); 
-  var AutoComplete = new google.maps.places.Autocomplete(input);
-}
+// function activatePlacesSearch(){
+//   var input = documet.getElementById('autocomplete'); 
+//   var AutoComplete = new google.maps.places.Autocomplete(input);
+// }
 
 var map, places, infoWindow;
 var markers = [];
@@ -385,3 +388,7 @@ function buildIWContent(place) {
 }
 
 //Make the Submit Button in google maps works
+// function GoogleMap(){
+//   var InitMap1 = new initMap();
+
+// }

@@ -12,7 +12,7 @@
 <body>
     <div class="navbar">
         <div class="container">
-         <img src="Codive.png">
+         <img src='Codive.png'>
         </div>
     </div>
      
@@ -35,13 +35,7 @@
                 </div>
           
                 <div id="locationField">
-                  <input id="autocomplete" placeholder="Enter a city" type="text" />
-                  <!-- <script>
-                    function activatePlacesSearch(){
-                      var input = documet.getElementById('autocomplete'); 
-                      var AutoComplete = new google.maps.places.Autocomplete(input);                        
-                    }
-                  </script> -->
+                  <input id="autocomplete" placeholder="Enter a city" type="text" />               
                 </div>
                 
                 <div id="controls">
@@ -97,13 +91,15 @@
                     </tr>
                   </table>
                 </div>
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAULrIwLYPxTVnbNup1tWJTfx8KNF3eHWc&libraries=places&callback=initMap"
+                <!-- <script class="yakker-location"src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAULrIwLYPxTVnbNup1tWJTfx8KNF3eHWc&libraries=places&callback=initMap"                
+                  async defer></script> -->
+                  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAULrIwLYPxTVnbNup1tWJTfx8KNF3eHWc&libraries=places&callback=initMap"
                 async defer></script>
               </div>          
             </div>                      
         <div class="container">
           <button type="button" onclick="document.getElementById('id01').style.display='none'" class="button-primary">Cancel</button>
-          <button id="map-submit" type="button" class="button-primary" >Submit</button>
+          <button id="map-submit" type="button" class="button-primary" onclick="document.getElementById('id01').style.display='none'" >Submit</button>
         </div>                  
       </form>
         </div>
