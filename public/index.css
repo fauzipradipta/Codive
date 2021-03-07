@@ -3,25 +3,27 @@
   padding: 0x;
   font-family: sans-serif;
 }
-.SignInPage{
+
+/* .SignInPage{
   height: 100%; 
   width: 100%; 
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(background.png);
   background-position: center;
   background-size: cover;
   position: absolute;
-}
-.form-box{
+} */
+
+ .button{
   width: 380px;
   height: 480px; 
-  position: relative;
-  margin: 6% auto; 
-  background: #fff; 
+  position:fixed;
+  margin-left: 100%; 
+  background: rgb(255, 255, 255); 
   padding: 5px;
   overflow: hidden;
-}
+} 
 
-.button-box{
+/* .button-box{
   width: 220px; 
   margin: 35px auto; 
   position: relative; 
@@ -47,7 +49,7 @@
   border-radius: 30px;
   transition: 5px;
 
-}
+} */ */
 
 /* .social-icons{
   margin: 30px auto; 
@@ -61,7 +63,7 @@
 
 } */
 
-.input-group{
+/* .input-group{
   top: 180px; 
   position: absolute;
   width: 280px; 
@@ -103,8 +105,8 @@ span{
   position:absolute;
 }
 #login{
-  left: 50px;
+  right: 50px;
 }
 #signup{
   left: 450px;
-}
+} */
