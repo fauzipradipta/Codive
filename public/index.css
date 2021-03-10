@@ -4,53 +4,11 @@
   font-family: sans-serif;
 }
 
-.btn btn-primary{
-  margin:0; 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-} 
-
 .button{
   text-align: center;
+  padding-top: 20%;
+  
 }
-/* .button-box{
-  width: 220px; 
-  margin: 35px auto; 
-  position: relative; 
-  box-shadow: 0 0 20px 9px #ff61241f; 
-  border-radius: 30px;
+.signUp{
+  padding-top: 1%;
 }
-.toggle-btn{
-  padding: 10px 30px; 
-  cursor: pointer;
-  background: transparent;
-  border:0; 
-  outline: none;
-  position: relative;
-}
-
-#btn{
-  top:0; 
-  left:0px; 
-  position: absolute;
-  width: 110px; 
-  height: 100%;
-  background: linear-gradient(to right, #8c6feeef, #603ddd);
-  border-radius: 30px;
-  transition: 5px;
-
-} */ 
-
-/* .social-icons{
-  margin: 30px auto; 
-  text-align: center;
-}
-.social-icons img{
-  width: 30px; 
-  margin: 0 12px; 
-  box-shadow: 0 0 20px 0 #7f7f7f3d;
-  cursor:pointer;
-
-} */
-
