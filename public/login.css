@@ -1,0 +1,15 @@
+*{
+  margin: 0px;
+  padding: 0x;
+  font-family: sans-serif;
+}
+
+.Form{
+    padding-top: 15%;
+    margin-left: 30%;
+    max-width: 700px;
+}
+
+.button{
+    padding-top: 1%;
+}

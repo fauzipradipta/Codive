@@ -7,3 +7,11 @@ function login(){
 function signup(){
     document.location.href="signup.html"
 }
+
+//direct to Home Page
+function home(){
+    document.location.href="Home.html"
+}
+  
+
+
