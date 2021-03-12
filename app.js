@@ -8,5 +8,8 @@ function listening(){
 }
 
 app.use(express.static('public'));
+// app.get('./public/Home.html', function(req,res){
+//     res.render('Home');
+// });
 
 console.log('server is Starting');

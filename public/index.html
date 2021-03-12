@@ -1,124 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Codive</title>
-  <link rel="stylesheet" href="skeleton.css"> 
-  <link rel="stylesheet" href="index.css">
-  <!-- <script src="index.js"></script> -->
-</head>
-<!-- Google Maps API KEY:AIzaSyAULrIwLYPxTVnbNup1tWJTfx8KNF3eHWc -->
-<body>
-    <div class="navbar">
-        <div class="container">
-         <img src='Codive.png'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="skeleton.css">  -->
+    <link rel="stylesheet" href="Home.css">
+    <script src=app.js></script>
+    <title>Codive</title>
+  </head>
+  <body>    
+    <div class="SignInPage">
+      <!-- <h2>Codive</h2> -->      
+      <div class ="form-box">
+        <div class ="button-box">
+          <div id="btn">            
+          </div>
+          <button type="button" class="toggle-btn" onClick="Login()">  Log In</button>
+          <button type="button" class="toggle-btn" onClick="Signup()"> Sign Up</button>
         </div>
+        <!-- <div class="social-icons"> 
+          <img src="fb.jpg">
+          <img src= "twitter.png">
+        </div> -->
+        <form id="login" class="input-group" action="index.html">
+          <input type="text" class="input-field" placeholder="User Id" required>
+          <input type="text" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="check-box"><span> Remember Password</span>
+          <button type="submit" class="submit-btn">Log In</button>
+        </form>
+
+        <form id="signup" class="input-group">
+          <input type="text" class="input-field" placeholder="User Id" required>
+          <input type="email" class="input-field" placeholder="Email" required>
+          <input type="text" class="input-field" placeholder="Enter Password" required>
+
+          <input type="checkbox" class="check-box"><span> I agree with terms & condition</span>
+          <button type="submit" class="submit-btn">Signup</button>
+        </form>
+      </div>
     </div>
-     
-    <div class="container">
-        <div class="row">
-          <div class="columns eight offset-by-two">
-
-           <textarea id="yakker-input" class="u-full-width" placeholder="What do you want to share?">  
-           </textarea>
-        </div>              
-      </div>       
-        <img src='location.jpg' class="flt_rght"  onclick="document.getElementById('id01').style.display='block'"/> 
-
-        <div id="id01" class="modal">
-          <form class="modal-content animate" method="post">
-            <div class ="container">
-              <div class="hotel-search">
-                <div id="findhotels">
-                  Find hotels in:
-                </div>
-          
-                <div id="locationField">
-                  <input id="autocomplete" placeholder="Enter a city" type="text" />               
-                </div>
-                
-                <div id="controls">
-                  <select id="country">
-                    <option value="all">All</option>
-                    <option value="au">Australia</option>
-                    <option value="br">Brazil</option>
-                    <option value="ca">Canada</option>
-                    <option value="fr">France</option>
-                    <option value="de">Germany</option>
-                    <option value="mx">Mexico</option>
-                    <option value="nz">New Zealand</option>
-                    <option value="it">Italy</option>
-                    <option value="za">South Africa</option>
-                    <option value="es">Spain</option>
-                    <option value="pt">Portugal</option>
-                    <option value="us" selected>U.S.A.</option>
-                    <option value="uk">United Kingdom</option>
-                  </select>
-                </div>
-              </div>
-               
-               <div id="map"></div> 
-              
-              <div id="listing">
-                <table id="resultsTable">
-                  <tbody id="results"></tbody>
-                </table>
-              </div>
-              
-              <div style="display: none">
-                <div id="info-content">
-                  <table>
-                    <tr id="iw-url-row" class="iw_table_row">
-                      <td id="iw-icon" class="iw_table_icon"></td>
-                      <td id="iw-url"></td>
-                    </tr>
-                    <tr id="iw-address-row" class="iw_table_row">
-                      <td class="iw_attribute_name">Address:</td>
-                      <td id="iw-address"></td>
-                    </tr>
-                    <tr id="iw-phone-row" class="iw_table_row">
-                      <td class="iw_attribute_name">Telephone:</td>
-                      <td id="iw-phone"></td>
-                    </tr>
-                    <tr id="iw-rating-row" class="iw_table_row">
-                      <td class="iw_attribute_name">Rating:</td>
-                      <td id="iw-rating"></td>
-                    </tr>
-                    <tr id="iw-website-row" class="iw_table_row">
-                      <td class="iw_attribute_name">Website:</td>
-                      <td id="iw-website"></td>
-                    </tr>
-                  </table>
-                </div>
-                <!-- <script class="yakker-location"src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAULrIwLYPxTVnbNup1tWJTfx8KNF3eHWc&libraries=places&callback=initMap"                
-                  async defer></script> -->
-                  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAULrIwLYPxTVnbNup1tWJTfx8KNF3eHWc&libraries=places&callback=initMap"
-                async defer></script>
-              </div>          
-            </div>                      
-        <div class="container">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="button-primary">Cancel</button>
-          <button id="map-submit" type="button" class="button-primary" onclick="document.getElementById('id01').style.display='none'" >Submit</button>
-        </div>                  
-      </form>
-        </div>
     
-        <div class="row yakker-message-info">
-          <div class="columns eight offset-by-two">
-            <span id="yakker-message-count">140</span>
-            <!-- Send Button -->
-            <button id="yakker-submit" class="button-primary" >Send</button>
-          </div>
-        </div>
-        <div class="row">
-          <div class="columns eight offset-by-two">
-            <ul id="yakker-list-container"></ul>
-          </div>
-        </div>
-    </div>
-  <script src="index.js"></script>
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAULrIwLYPxTVnbNup1tWJTfx8KNF3eHWc&libraries=places&callback=initMap"
-  async defer></script> -->
-</body>
-</html>
+    <script src="index.js"></script>
+  </body>
+  </html>
+
