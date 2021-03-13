@@ -5,12 +5,12 @@ function login(){
 
 //direct to signup Page
 function signup(){
-    document.location.href="signup.html"
+    document.location.href="signup.html";
 }
 
 //direct to Home Page
 function home(){
-    document.location.href="Home.html"
+    document.location.href="Home.html";
 }
   
 
