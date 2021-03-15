@@ -1,3 +1,5 @@
+var signUpBtn = document.querySelector('.btn btn-lg btn-primary active');
+
 //direct to login Page
 function login(){
     document.location.href="login.html";
@@ -12,6 +14,5 @@ function signup(){
 function home(){
     document.location.href="Home.html";
 }
-  
 
 
