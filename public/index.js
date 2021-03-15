@@ -1,19 +1,18 @@
-var SignInButton = document.getElementById("login");
-var SignUpButton = document.getElementById("signup");
-var Button       = document.getElementById("btn");
+var signUpBtn = document.querySelector('.btn btn-lg btn-primary active');
 
-function Signup(){
-    SignInButton.style.left ="-400px";
-    SignUpButton.style.left="50px"; 
-    Button.style.left="110px";
+//direct to login Page
+function login(){
+    document.location.href="login.html";
 }
 
-function Login(){
-    SignInButton.style.left ="500px";
-    SignUpButton.style.left="450px"; 
-    Button.style.left="0";
-
-    // var url = "index.html";
-    // window.location(url);
+//direct to signup Page
+function signup(){
+    document.location.href="signup.html";
 }
+
+//direct to Home Page
+function home(){
+    document.location.href="Home.html";
+}
+
 
