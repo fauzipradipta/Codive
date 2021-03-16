@@ -2,8 +2,11 @@
   margin: 0px;
   padding: 0x;
   font-family: sans-serif;
+  
 }
-
+body{
+  background-image: url('.\public\UI\background.png');
+}
 .button{
   text-align: center;
   padding-top: 20%;
