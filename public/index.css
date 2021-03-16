@@ -5,16 +5,28 @@
   
 }
 body{
-  background-image: url('.\public\UI\background.png');
+  background-image: url("UI/background.png");
+
+  /* Center and Scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
+
+
 .button{
   text-align: center;
   padding-top: 20%;
+  padding-left: 45%;
+  /* margin-bottom: 40%; */
   
 }
-/* .signUp{
-  padding-top: 1%;
-} */
+.signup{
+  padding-left: 900%;
+  padding-bottom: 50%;
+}
+
 
 .signIn{
  padding-top: 1%;
@@ -27,6 +39,11 @@ body{
  
 } */
 
+.picture{
+  width: 10%;
+  height: 10%;
+  padding-left: 2%;
+}
 .navbar {
   border-bottom: 1px solid #D1D1D1;
   margin-bottom: 2rem;
