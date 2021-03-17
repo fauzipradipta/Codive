@@ -2,19 +2,49 @@
   margin: 0px;
   padding: 0x;
   font-family: sans-serif;
+  
+}
+ 
+/* body{
+  background-image: url("UI/background.png"); */
+
+  /* Center and Scale the image nicely */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+} */
+ 
+.picture{
+  display: inline-block;
+  vertical-align: top;
+}
+.text{
+  padding-bottom: 10%;
+  padding-left: 5% ;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .button{
   text-align: center;
-  padding-top: 20%;
+  padding-top: 15%;
+  padding-left: 50%;
+  /* margin-bottom: 40%; */
+  display: inline-block;
   
 }
-/* .signUp{
-  padding-top: 1%;
-} */
+.signup{
+  padding-left: 5%;
+  width: 270%;
+}
+
 
 .signIn{
- padding-top: 1%;
+  width: 270%;
+  padding-top: 10%;
 }
 
 /* .logo{
@@ -24,6 +54,11 @@
  
 } */
 
+.picture{
+  width: 10%;
+  height: 10%;
+  padding-left: 2%;
+}
 .navbar {
   border-bottom: 1px solid #D1D1D1;
   margin-bottom: 2rem;
@@ -40,3 +75,4 @@
 .navbar .project-name {
   font-size: 4rem;
 }
+
