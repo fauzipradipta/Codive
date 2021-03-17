@@ -1,11 +1,12 @@
-var express = require('express');       //shows that we use the express
-var app = express();
-var mongoose = require('mongoose');
-var passport = require('passport');
-var bodyParser = require('body-parser');
+const express = require('express');       //shows that we use the express
+const app = express();
+const mongoose = require('mongoose');
+const passport = require('passport');
+const bodyParser = require('body-parser');
+const server = app.listen(5000, listening);
+const AuthRoute = require('./controllers/AuthController')
 
-var server = app.listen(5000, listening);
-// var login = require('./public/login');
+
 
 function listening(){
     console.log("listening...");
