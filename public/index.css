@@ -4,32 +4,47 @@
   font-family: sans-serif;
   
 }
-body{
-  background-image: url("UI/background.png");
+ 
+/* body{
+  background-image: url("UI/background.png"); */
 
   /* Center and Scale the image nicely */
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   
+} */
+ 
+.picture{
+  display: inline-block;
+  vertical-align: top;
 }
-
+.text{
+  padding-bottom: 10%;
+  padding-left: 5% ;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
 
 .button{
   text-align: center;
-  padding-top: 20%;
-  padding-left: 45%;
+  padding-top: 15%;
+  padding-left: 50%;
   /* margin-bottom: 40%; */
+  display: inline-block;
   
 }
 .signup{
-  padding-left: 900%;
-  padding-bottom: 50%;
+  padding-left: 5%;
+  width: 270%;
 }
 
 
 .signIn{
- padding-top: 1%;
+  width: 270%;
+  padding-top: 10%;
 }
 
 /* .logo{
@@ -60,3 +75,4 @@ body{
 .navbar .project-name {
   font-size: 4rem;
 }
+
