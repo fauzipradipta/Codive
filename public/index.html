@@ -10,38 +10,51 @@
     <title>Codive</title>
   </head>
   <body>    
-    <!-- <div class="navbar">
+    <div class="navbar">
       <div class="container">
-        <img src='UI/shark.jpg'alt="logo">
+        <img src='UI/Codive.png'alt="logo">
+        <form class="row g-3">         
+          <div class="col-auto">
+            <label for="inputEmail" class="visually-hidden">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Password">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Sign in </button>
+          </div>
+        </form>
       </div>
     </div>
-     -->
+    
     <div class="picture ">
         <img src="UI/Capture.JPG" alt="Capture">
     </div>
     
     
-    <div class="button"> 
-      <div class ="text">
-        <p>Join With us</p>        
-      </div>
-
-      <!-- Sign Up Button -->      
-      <div class='signup'>
-        <div class="d-grid gap-3 col-16 mx-auto">
-          <a type="button"  onclick="signup()" class="btn btn-primary btn-lg" >Sign Up </a>        
-        </div>
-      </div>
+    <div class ="text">
+      <p>Share your diving ecperiene with your friends</p> 
       
-      <!-- Sign in Button -->
       
-      <div class ="signIn">
-        <div class="d-grid gap-2 col-16 mx-auto" >
-         <a type="button" onClick="login()" class="btn btn-secondary btn-lg">Log In</a>
+      <div class="button"> 
+  
+        <!-- Sign Up Button -->      
+        <div class='signup'>
+          <div class="d-grid gap-3 col-16 mx-auto">
+            <a type="button"  onclick="signup()" class="btn btn-primary btn-lg" >Sign Up </a>        
+          </div>
         </div>
-      </div>       
-
+        
+        <!-- Sign in Button -->
+        
+        <div class ="signIn">
+          <div class="d-grid gap-2 col-16 mx-auto" >
+           <a type="button" onClick="login()" class="btn btn-secondary btn-lg">Log In</a>
+          </div>
+        </div>       
+  
+      </div>
     </div>
+
+
 
     <script src="index.js"></script>
   </body>

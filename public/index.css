@@ -20,8 +20,8 @@
   vertical-align: top;
 }
 .text{
-  padding-bottom: 10%;
-  padding-left: 5% ;
+  padding-top: 10%;
+  padding-left: 50% ;
   display: inline-block;
   text-align: center;
   font-weight: bold;
@@ -30,9 +30,8 @@
 
 .button{
   text-align: center;
-  padding-top: 15%;
-  padding-left: 50%;
-  /* margin-bottom: 40%; */
+  /* padding-bottom: 20%;   */
+  padding-right: 50%;  
   display: inline-block;
   
 }
